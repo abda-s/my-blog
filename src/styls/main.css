@@ -1,0 +1,22 @@
+/* font name:Fira Code */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+/* font name:press start 2p */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Press+Start+2P&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    /* background-color:#21252B; */
+    background: #333842;
+    color:azure;
+
+}
+
+.all {
+    background-color: #282C34;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    height: 100%;
+}

@@ -8,9 +8,11 @@ import Coding from "./components/Coding";
 import Youtube from "./components/Youtube";
 import Art from "./components/Art";
 
+import "./styls/main.css"
+
 const App = () => {
   return (
-    <div className="App">
+    <div className="all">
       <BrowserRouter>
       <NavigationBar />
 

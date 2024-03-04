@@ -62,12 +62,14 @@
     .logo{
         font-size:18px;
     }
-    .navbar ul li{
+    .navbar .active li{
         display:block;
         margin:10px 10px;
     }
+    .not-active{
+        display: none;
+    }
 
 }
-
 
 

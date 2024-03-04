@@ -29,10 +29,10 @@ const NavigationBar = () => {
     return (
         <div className="navbar"> {/* Use className instead of class */}
             <h1 className="logo">Abdullah Salameh.</h1>
-            <ul>
+            <ul  className="active">
                 {Navlinks.map((item, index) => (
                     <li key={index}>
-                        <Link to={item.link} >{item.title}</Link>
+                        <Link  to={item.link} >{item.title}</Link>
                     </li>))}
             </ul>
         </div>

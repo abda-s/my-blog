@@ -1,7 +1,7 @@
 /* the nav bar */
 .navbar{
     width:97%;
-    margin:20px auto 10px auto;
+    margin:10px auto 10px auto;
     padding: 5px;
     display: flex;
     align-items:center;
@@ -53,18 +53,18 @@
 @media screen and (max-width: 500px) {
 
     .navbar{
+        margin: auto;
         display:block;
-        border-radius: 30px;
+        border-radius: 20px;
+        font-size:15px;   
+
     }
     .logo{
-        font-size:30px;
+        font-size:18px;
     }
     .navbar ul li{
         display:block;
-        margin:10px 20px;
-    }
-    .navbar ul li a{
-        font-size:30px;  
+        margin:10px 10px;
     }
 
 }

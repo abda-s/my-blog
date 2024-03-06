@@ -19,9 +19,24 @@
     margin-left: 20px;
     color: #D44B3E;
 }
+.menu-content-container{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.profile-pic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display:inline-block;
+
+}
+
 .navbar ul{
     padding: 0;
     margin: 0;
+    
+
 }
 .navbar ul li{
     list-style-type: none;
@@ -34,6 +49,11 @@
     text-decoration: none;
     /* color:#98C379; */
     color:#56B6C2;
+}
+
+.menu-icon{
+    cursor: pointer;
+    display: none;
 }
 .navbar ul li::after{
     content:'';
@@ -51,24 +71,55 @@
 
 /* !the nav bar */
 @media screen and (max-width: 500px) {
-
     .navbar{
-        margin: auto;
-        display:block;
-        border-radius: 20px;
-        font-size:15px;   
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 30px;
 
+    }
+    .menu-and-logo{
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        width: 100%;
     }
     .logo{
-        font-size:18px;
+        font-size: 18px;
     }
-    .navbar .active li{
-        display:block;
-        margin:10px 10px;
+    .menu-icon{
+        font-size: 18px;
+        margin-right: 20px;
+        cursor: pointer;
+        display: flex;
     }
-    .not-active{
+
+   .active{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    .false{
         display: none;
     }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .navbar ul li{
+    font-size: 15px;
+     margin: 5px 10px;
+
+    }
+    .profile-pic{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        margin: 5px 10px;
+    }
+
 
 }
 

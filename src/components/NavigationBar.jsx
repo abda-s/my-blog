@@ -12,8 +12,8 @@ const Navlinks = [
         link: "/AboutMe"
     },
     {
-        title: "Coding.",
-        link: "/Coding"
+        title: "Posts.",
+        link: "/Posts"
     },
     {
         title: "Youtube.",

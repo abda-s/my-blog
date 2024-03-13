@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
-import Coding from "./components/Coding";
+import Posts from "./components/Posts";
 import Youtube from "./components/Youtube";
 import Art from "./components/Art";
 
@@ -19,7 +19,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AboutMe" element={<AboutMe />} />
-          <Route path="/Coding" element={<Coding />} />
+          <Route path="/Posts" element={<Posts />} />
           <Route path="/Youtube" element={<Youtube />} />
           <Route path="/Art" element={<Art />} />
         </Routes>

@@ -2,16 +2,13 @@
     background-color: #21252B;
     max-width: 350px;
     margin: 20px;
-    border: 3px solid #333842;
     border-radius: 8px;
     overflow: hidden;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .post-container img {
     width: 100%;
     height: 200px;
-    border-bottom: 0px solid #353941;
     margin: 0;
     object-fit: cover;
 }
@@ -55,4 +52,8 @@ p {
     display: block;
     margin: 5px 13px;
     color: #555;
+}
+
+a{
+    text-decoration: none;
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "../styls/one-post.css"
 import TruncatedText from './TruncatedText';
 
@@ -11,8 +13,11 @@ export default function OnePost(props) {
             <img src="https://wallpaperbat.com/img/641219-react-js-wallpaper-top-free-react-js-background.jpg" />
             <div className="content">
 
-                <h1>{props.title}</h1>
-                <TruncatedText text={props.description} maxLength={50} />
+                <Link to={props.link}>
+                    <h1>{props.title}</h1>
+                    <TruncatedText text={props.description} maxLength={50} />
+                </Link>
+
                 <div className="tags">
                     {props.tags.map((item, index) => {
                         return <span key={index} >{item}</span>

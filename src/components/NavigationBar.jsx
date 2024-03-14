@@ -15,14 +15,6 @@ const Navlinks = [
         title: "Posts.",
         link: "/Posts"
     },
-    {
-        title: "Youtube.",
-        link: "/Youtube"
-    },
-    {
-        title: "Art.",
-        link: "/Art"
-    }
 ]
 const NavigationBar = () => {
     const [menuActive, setMenueActive] = useState(false);

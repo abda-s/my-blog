@@ -15,6 +15,10 @@ const Navlinks = [
         title: "Posts.",
         link: "/Posts"
     },
+    {
+        title: "login.",
+        link: "/login"
+    },
 ]
 const NavigationBar = () => {
     const [menuActive, setMenueActive] = useState(false);

@@ -5,8 +5,7 @@ import NavigationBar from "./components/NavigationBar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Posts from "./components/Posts";
-import Youtube from "./components/Youtube";
-import Art from "./components/Art";
+import Login from "./components/Login"
 
 import "./styls/main.css"
 
@@ -20,8 +19,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/AboutMe" element={<AboutMe />} />
           <Route path="/Posts" element={<Posts />} />
-          <Route path="/Youtube" element={<Youtube />} />
-          <Route path="/Art" element={<Art />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -10,11 +10,14 @@ import posts from "../moks/posts"
 //         tags: ["react", "arduino"],
 //         link: "/"
 //     },
-// ]
+// ] 
 export default function PostsView() {
     return (
-        <div>
-            PostsView
+        <div className="all-posots-container">
+        <div className="header">
+        PostsView 
+        </div>
+            
             <div className="posots-container">
                 {posts.map((post, index) => {
                     return <OnePost

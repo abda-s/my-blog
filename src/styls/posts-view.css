@@ -1,6 +1,14 @@
+.all-posots-container{
+    display: flex;
+    flex-direction: row;
+}
 .posots-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     
+}
+
+.header{
+    justify-items: center;
 }

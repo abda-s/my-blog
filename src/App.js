@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Posts from "./components/Posts";
 import Login from "./components/Login";
+import Post from "./components/Post";
 // import Signup from "./components/Signup";
 
 import { AuthContext } from "./helpers/AuthContext";
@@ -49,6 +50,7 @@ const App = () => {
             <Route path="/AboutMe" element={<AboutMe />} />
             <Route path="/Posts" element={<Posts />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/Posts/:id" element={<Post />} />
             {/* <Route path="/signup" element={<Signup />} /> */}
           </Routes>
         </BrowserRouter>

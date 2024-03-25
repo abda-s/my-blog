@@ -8,7 +8,7 @@ import Login from "./pages/Login";
 import Post from "./pages/Post";
 import CreatePost from "./pages/CreatePost";
 import EditPost from "./pages/EditPost";
-// import Signup from "./pages/Signup";
+import Signup from "./pages/Signup";
 
 import { AuthContext } from "./helpers/AuthContext";
 import axios from "axios";
@@ -55,7 +55,7 @@ const App = () => {
             <Route path="/Posts/:id" element={<Post />} />
             <Route path="/CreatePost" element={<CreatePost />} />
             <Route path="/EditPost/:id" element={<EditPost />} />
-            {/* <Route path="/signup" element={<Signup />} /> */}
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </BrowserRouter>
       </AuthContext.Provider>

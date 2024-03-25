@@ -9,10 +9,6 @@ const Navlinks = [
     title: "Home.",
     link: "/",
   },
-  // {
-  //   title: "About Me.",
-  //   link: "/AboutMe",
-  // },
 ];
 const NavigationBar = () => {
   const { authState, setAuthState } = useContext(AuthContext);
@@ -42,7 +38,9 @@ const NavigationBar = () => {
           ))}
         </ul>
         {!authState.state ? (
-          <></>
+          <Link className="login" to={"/Login"}>
+            Login.
+          </Link>
         ) : (
           <>
             {/* <img className="profile-pic" src={profile} />

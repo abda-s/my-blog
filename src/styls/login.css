@@ -109,3 +109,7 @@
   display: flex;
   flex-direction: row;
 }
+.error {
+  font-size: 13px;
+  width: 250px;
+}

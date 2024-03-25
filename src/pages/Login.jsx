@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { AuthContext } from "../helpers/AuthContext";
 
 import axios from "axios";
@@ -103,10 +103,10 @@ export default function Login() {
           </div>
           <div>{error}</div>
           <div className="signup-con">
-            {/* <span>you don't have an account </span>
+            <span>you don't have an account </span>
             <Link className="" to={"/signup"}>
               sign up
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>

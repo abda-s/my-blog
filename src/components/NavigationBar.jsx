@@ -1,21 +1,18 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import "../styls/Navbar.css";
-import profile from "../imgs/prfile.jpg";
-
 import { AuthContext } from "../helpers/AuthContext";
-
 import ProfileComponent from "./ProfileComponent";
+import "../styls/Navbar.css";
 
 const Navlinks = [
   {
     title: "Home.",
     link: "/",
   },
-  {
-    title: "About Me.",
-    link: "/AboutMe",
-  },
+  // {
+  //   title: "About Me.",
+  //   link: "/AboutMe",
+  // },
 ];
 const NavigationBar = () => {
   const { authState, setAuthState } = useContext(AuthContext);

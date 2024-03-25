@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import OnePost from "./OnePost";
 import "../styls/posts-view.css";
-import posts from "../moks/posts";
 import ax from "axios";
+
 export default function PostsView() {
   const [listOfPosts, setListOfPosts] = useState([]);
   useEffect(() => {

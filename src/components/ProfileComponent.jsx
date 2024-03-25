@@ -2,10 +2,10 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom"; // Assuming you're using React Router for navigation
 import profile from "../imgs/prfile.jpg"; // Assuming profile image is in the same directory
 import "../styls/profile.css";
-import { AuthContext, setAuthState } from "../helpers/AuthContext";
+import { AuthContext } from "../helpers/AuthContext";
 
 function ProfileComponent() {
-  const { authState, setAuthState } = useContext(AuthContext);
+  const { setAuthState } = useContext(AuthContext);
 
   const [menuVisible, setMenuVisible] = useState(false);
   const toggleMenu = () => {
@@ -17,7 +17,12 @@ function ProfileComponent() {
   };
   return (
     <div className="profile-container">
-      <img className="profile-pic" src={profile} onClick={toggleMenu} />
+      <img
+        className="profile-pic"
+        src={profile}
+        alt="prof"
+        onClick={toggleMenu}
+      />
       {menuVisible && (
         <div className="dropdown-menu">
           <button onClick={logout}>Log out</button>

@@ -51,6 +51,7 @@ const NavigationBar = () => {
           <>
             <img className="profile-pic" src={profile} />
             <button onClick={logout}>log out</button>
+            <Link to="/CreatePost">Create</Link>{" "}
           </>
         )}
       </div>

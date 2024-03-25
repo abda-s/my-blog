@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavigationBar from "./components/NavigationBar";
-import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
-import Posts from "./components/Posts";
-import Login from "./components/Login";
-import Post from "./components/Post";
-import CreatePost from "./components/CreatePost";
-import EditPost from "./components/EditPost";
-// import Signup from "./components/Signup";
+import NavigationBar from "./pages/components/NavigationBar";
+// import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
+import Posts from "./pages/Posts";
+import Login from "./pages/Login";
+import Post from "./pages/Post";
+import CreatePost from "./pages/CreatePost";
+import EditPost from "./pages/EditPost";
+// import Signup from "./pages/Signup";
 
 import { AuthContext } from "./helpers/AuthContext";
 import axios from "axios";

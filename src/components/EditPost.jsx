@@ -36,30 +36,31 @@ function EditPost() {
     <div>
       <div className="edit-form">
         <p id="heading">Edit blog</p>
-        <div className="field">
-          <label>title:</label>
-          <input
-            className="input-field"
-            value={title}
-            type="text"
-            onChange={(event) => {
-              setTitle(event.target.value);
-            }}
-          />
-        </div>
+        <div className="title-and-image-cont">
+          <div className="field">
+            <label>title:</label>
+            <input
+              className="input-field"
+              value={title}
+              type="text"
+              onChange={(event) => {
+                setTitle(event.target.value);
+              }}
+            />
+          </div>
 
-        <div className="field">
-          <label>image:</label>
-          <input
-            className="input-field"
-            value={image}
-            type="text"
-            onChange={(event) => {
-              setImage(event.target.value);
-            }}
-          />
+          <div className="field">
+            <label>image:</label>
+            <input
+              className="input-field"
+              value={image}
+              type="text"
+              onChange={(event) => {
+                setImage(event.target.value);
+              }}
+            />
+          </div>
         </div>
-
         <div className="field">
           <label>description:</label>
           <input
@@ -76,7 +77,7 @@ function EditPost() {
           <textarea
             className="input-field"
             value={content}
-            rows="15"
+            rows="10"
             cols="100"
             onChange={(event) => {
               setContent(event.target.value);

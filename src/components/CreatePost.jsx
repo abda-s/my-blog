@@ -17,50 +17,57 @@ function CreatePost() {
   };
   return (
     <div>
-      <div className="create-post-con">
-        <label>title:</label>
-        <input
-          type="text"
-          onChange={(event) => {
-            setTitle(event.target.value);
-          }}
-        />
+      <div className="edit-form">
+        <p id="heading">Create blog</p>
+        <div className="title-and-image-cont">
+          <div className="field">
+            <label>title:</label>
+            <input
+              className="input-field"
+              type="text"
+              onChange={(event) => {
+                setTitle(event.target.value);
+              }}
+            />
+          </div>
 
-        <label>image:</label>
-        <input
-          type="text"
-          onChange={(event) => {
-            setImage(event.target.value);
-          }}
-        />
+          <div className="field">
+            <label>image:</label>
+            <input
+              className="input-field"
+              type="text"
+              onChange={(event) => {
+                setImage(event.target.value);
+              }}
+            />
+          </div>
+        </div>
 
-        <label>description:</label>
-        <input
-          type="text"
-          onChange={(event) => {
-            setDes(event.target.value);
-          }}
-        />
+        <div className="field">
+          <label>description:</label>
+          <input
+            className="input-field"
+            type="text"
+            onChange={(event) => {
+              setDes(event.target.value);
+            }}
+          />
+        </div>
 
-        <label>content:</label>
-        {/* <input
-          type="text"
-          onChange={(event) => {
-            setContent(event.target.value);
-          }}
-        /> */}
-        <textarea
-          id="story"
-          name="story"
-          rows="5"
-          cols="33"
-          onChange={(event) => {
-            setContent(event.target.value);
-          }}
-        >
-          It was a dark and stormy night...
-        </textarea>
-        <button onClick={submitForm}>Post</button>
+        <div className="field">
+          <label>content:</label>
+          <textarea
+            className="input-field"
+            rows="10"
+            cols="100"
+            onChange={(event) => {
+              setContent(event.target.value);
+            }}
+          ></textarea>
+        </div>
+        <button className="button3" onClick={submitForm}>
+          Post
+        </button>
       </div>
     </div>
   );

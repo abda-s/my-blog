@@ -5,6 +5,8 @@ import profile from "../imgs/prfile.jpg";
 
 import { AuthContext } from "../helpers/AuthContext";
 
+import ProfileComponent from "./ProfileComponent";
+
 const Navlinks = [
   {
     title: "Home.",
@@ -14,14 +16,11 @@ const Navlinks = [
     title: "About Me.",
     link: "/AboutMe",
   },
-  {
-    title: "Posts.",
-    link: "/Posts",
-  },
 ];
 const NavigationBar = () => {
   const { authState, setAuthState } = useContext(AuthContext);
   const [menuActive, setMenueActive] = useState(false);
+
   const logout = () => {
     localStorage.removeItem("accessToken");
     setAuthState({ username: "", id: 0, state: false });
@@ -49,9 +48,10 @@ const NavigationBar = () => {
           <></>
         ) : (
           <>
-            <img className="profile-pic" src={profile} />
+            {/* <img className="profile-pic" src={profile} />
             <button onClick={logout}>log out</button>
-            <Link to="/CreatePost">Create</Link>{" "}
+            <Link to="/CreatePost">Create</Link> */}
+            <ProfileComponent />
           </>
         )}
       </div>

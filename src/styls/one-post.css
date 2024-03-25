@@ -5,6 +5,10 @@
   margin: 20px;
   border-radius: 8px;
   overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+.post-container:hover {
+  transform: scale(1.05);
 }
 
 .post-container img {

@@ -31,7 +31,11 @@ function EditPost() {
     });
     navigate(`/Posts/${id}`);
   };
-
+  const deletePost = () => {
+    ax.delete(`http://localhost:3001/posts/byId/delete/${id}`).then(() => {
+      navigate(`/`);
+    });
+  };
   return (
     <div>
       <div className="edit-form">
@@ -86,6 +90,9 @@ function EditPost() {
         </div>
         <button className="button3" onClick={submitForm}>
           Edit
+        </button>
+        <button className="button3" onClick={deletePost}>
+          Delete Post
         </button>
       </div>
     </div>

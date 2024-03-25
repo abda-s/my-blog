@@ -48,9 +48,9 @@ const App = () => {
           <NavigationBar />
 
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} /> */}
             <Route path="/AboutMe" element={<AboutMe />} />
-            <Route path="/Posts" element={<Posts />} />
+            <Route path="/" element={<Posts />} />
             <Route path="/login" element={<Login />} />
             <Route path="/Posts/:id" element={<Post />} />
             <Route path="/CreatePost" element={<CreatePost />} />

@@ -1,59 +1,69 @@
 .post-container {
-    background-color: #21252B;
-    max-width: 350px;
-    margin: 20px;
-    border-radius: 8px;
-    overflow: hidden;
+  background-color: #21252b;
+  width: 350px;
+  height: 375px;
+  margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .post-container img {
-    width: 100%;
-    height: 200px;
-    margin: 0;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  object-fit: cover;
 }
 
 .content {
-    padding:0;
-    margin: 0px 7px;
+  padding: 0;
+  margin: 0px 7px;
 }
 
 .tags {
-    margin: 5px 7px;
+  margin: 5px 7px;
 }
 
 .tags span {
-    display: inline-block;
-    margin-right: 8px;
-    margin-bottom: 5px;
-    border: 1px solid #333842;
-    border-radius: 8px;
-    color: #444b58;
-    font-weight: 800;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #333842;
+  border-radius: 8px;
+  color: #444b58;
+  font-weight: 800;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 h1 {
-    font-size: 25px;
-    margin: 0px 10px;
-    color: #e3ffe5;
+  font-size: 25px;
+  margin: 0px 10px;
+  color: #e3ffe5;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #777;
-    margin: 5px 7px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #777;
+  margin: 5px 7px;
 }
 
 .date {
-    display: block;
-    margin: 5px 13px;
-    color: #555;
+  display: block;
+  margin: 10px 13px;
+  margin-bottom: 15px;
+  color: #555;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+}
+.edit-link {
+  color: #409bb4;
+  border: 1px solid #409bb4;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 5px;
+  margin-bottom: 10px;
 }

@@ -26,6 +26,7 @@ export default function Login() {
           setAuthState({
             username: response.data.username,
             id: response.data.id,
+            role: response.data.role,
             state: true,
           });
           navigate(`/`);

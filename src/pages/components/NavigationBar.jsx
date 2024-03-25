@@ -11,13 +11,9 @@ const Navlinks = [
   },
 ];
 const NavigationBar = () => {
-  const { authState, setAuthState } = useContext(AuthContext);
+  const { authState } = useContext(AuthContext);
   const [menuActive, setMenueActive] = useState(false);
 
-  const logout = () => {
-    localStorage.removeItem("accessToken");
-    setAuthState({ username: "", id: 0, state: false });
-  };
   return (
     <div className="navbar">
       {" "}

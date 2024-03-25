@@ -30,11 +30,12 @@ const App = () => {
       })
       .then((response) => {
         if (response.data.error) {
-          setAuthState({ username: "", id: 0, state: false });
+          setAuthState({ username: "", id: 0, role: "NA", state: false });
         } else {
           setAuthState({
             username: response.data.username,
             id: response.data.id,
+            role: response.data.role,
             state: true,
           });
         }

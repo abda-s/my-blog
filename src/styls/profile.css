@@ -14,6 +14,7 @@
 }
 
 .dropdown-menu {
+  text-align: center;
   position: absolute;
   top: 100%; /* Position the dropdown below the profile picture */
   right: 0;

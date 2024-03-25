@@ -6,10 +6,13 @@ import "../../styls/one-post.css";
 
 //"https://wallpaperbat.com/img/641219-react-js-wallpaper-top-free-react-js-background.jpg"
 export default function OnePost(props) {
+  const { authState } = useContext(AuthContext);
+
   const [convertedDate, setConvertedDate] = useState("");
   useEffect(() => {
     const inputDateString = props.date;
     const inputDate = new Date(inputDateString);
+    console.log(authState);
 
     // Extract year, month, and day components
     const year = inputDate.getFullYear();
@@ -21,8 +24,6 @@ export default function OnePost(props) {
 
     setConvertedDate(outputDateString);
   }, []);
-
-  const { authState, setAuthState } = useContext(AuthContext);
 
   return (
     <div className="post-container">
@@ -38,7 +39,7 @@ export default function OnePost(props) {
           })}
         </div> */}
         <span className="date">{convertedDate}</span>
-        {!authState.state ? (
+        {!authState.state || authState.role == "user" ? (
           <></>
         ) : (
           <Link className="edit-link" to={`/EditPost/${props.link}`}>

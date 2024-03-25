@@ -27,6 +27,7 @@ export default function Signup() {
             username: response.data.username,
             id: response.data.id,
             state: true,
+            role: response.data.role,
           });
           navigate(`/`);
         }

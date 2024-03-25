@@ -14,7 +14,7 @@ export default function OnePost(props) {
           <h1>{props.title}</h1>
           <TruncatedText text={props.description} maxLength={50} />
         </Link>
-
+        <Link to={`/EditPost/${props.link}`}>Edit</Link>
         {/* <div className="tags">
           {props.tags.map((item, index) => {
             return <span key={index}>{item}</span>;

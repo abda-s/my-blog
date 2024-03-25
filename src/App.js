@@ -7,6 +7,7 @@ import Posts from "./components/Posts";
 import Login from "./components/Login";
 import Post from "./components/Post";
 import CreatePost from "./components/CreatePost";
+import EditPost from "./components/EditPost";
 // import Signup from "./components/Signup";
 
 import { AuthContext } from "./helpers/AuthContext";
@@ -53,6 +54,7 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/Posts/:id" element={<Post />} />
             <Route path="/CreatePost" element={<CreatePost />} />
+            <Route path="/EditPost/:id" element={<EditPost />} />
             {/* <Route path="/signup" element={<Signup />} /> */}
           </Routes>
         </BrowserRouter>

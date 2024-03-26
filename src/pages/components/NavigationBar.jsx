@@ -16,8 +16,6 @@ const NavigationBar = () => {
 
   return (
     <div className="navbar">
-      {" "}
-      {/* Use className instead of class */}
       <div className="menu-and-logo">
         <h1 className="logo">Abdullah Salameh.</h1>
         <i
@@ -38,12 +36,7 @@ const NavigationBar = () => {
             Login.
           </Link>
         ) : (
-          <>
-            {/* <img className="profile-pic" src={profile} />
-            <button onClick={logout}>log out</button>
-            <Link to="/CreatePost">Create</Link> */}
-            <ProfileComponent />
-          </>
+          <ProfileComponent />
         )}
       </div>
     </div>

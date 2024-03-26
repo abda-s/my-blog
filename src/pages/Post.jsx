@@ -14,8 +14,22 @@ function Post() {
     });
   }, []);
   return (
-    <div className="markdown-con">
-      <Markdown remarkPlugins={[remarkGfm]}>{postObject.content}</Markdown>
+    <div className="post-con">
+      <div className="image-container">
+        <img src={postObject.image} alt="Post" />
+        <div className="image-overlay"></div>
+        <div className="image-and-title-con">
+          <span className="image-title">{postObject.title}</span>
+          <p className="description">{postObject.description}</p>
+        </div>
+      </div>
+      <div className="markdown-con-wrapper">
+        <div></div> {/* First empty div */}
+        <div className="markdown-con">
+          <Markdown remarkPlugins={[remarkGfm]}>{postObject.content}</Markdown>
+        </div>
+        <div></div> {/* Second empty div */}
+      </div>
     </div>
   );
 }

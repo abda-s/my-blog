@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import "../styls/markdown.css";
-
+import Comments from "./components/Comments";
 function Post() {
   let { id } = useParams();
   const [postObject, setPostObject] = useState({});
@@ -28,7 +28,10 @@ function Post() {
         <div className="markdown-con">
           <Markdown remarkPlugins={[remarkGfm]}>{postObject.content}</Markdown>
         </div>
-        <div></div> {/* Second empty div */}
+        <div>
+          <Comments />
+        </div>{" "}
+        {/* Second empty div */}
       </div>
     </div>
   );
